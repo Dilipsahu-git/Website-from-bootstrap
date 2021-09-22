@@ -1,0 +1,461 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Own CSS -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+
+    <title>fooDoor</title>
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <nav class="navbar navbar-expand-lg navigation-wrapper">
+            <div class="container">
+                <a class="navbar-brand" href="#"><img src="./src/images/logo.png" alt="logo"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fas fa-stream navbar-toggler-icon"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarText">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#explore-food">Explore Food</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#testimonial">Review</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#faq">FAQ</a>
+                        </li>
+
+                        <!-- Own Button -->
+                        <li><button class="main-btn">Phone Number</button></li>
+
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Banner -->
+    <section id="home">
+        <div class="container-fluid px-0 banner">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-5 col-md-6">
+                        <h1>Good food choices are good investments.</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, nesciunt possimus quasi
+                            dignissimos exercitationem quod.</p>
+                    </div>
+                    <!-- When we don't metion col it's take bydefault 12 grid -->
+                    <div class="mt-4">
+                        <!-- In bootstrap 5, s=left and e=right so, here ps means ps=padding-left-->
+                        <button class="main-btn">Order Now<i class="fa fa-shopping-basket ps-3"
+                                aria-hidden="true"></i></button>
+                        <!-- Here ms-lg-4 mean ms-(margin from left) lg-4(on large devices will 4), mt-(margin from top) lg-0(on large devices will 0) margin top for upper button  and last mt-4(margin from top for other devices lower than large devices will 0)-->
+                        <button class="white-btn ms-lg-4 mt-lg-0 mt-4">Order Now<i class="fa fa-angle-right ps-3"
+                                aria-hidden="true"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        </div>
+    </section>
+
+    <!-- Counter -->
+    <section>
+        <section class="counter-section">
+            <div class="container">
+                <div class="row text-center">
+                    <!-- Here col-md-3 mean column-md-3(column on medium devices will take 3(grid), mb-lg-0(margin from bottom -on large devices will -0), mb-md-0(margin from bottom -on medium devices will -0), mb-5(large and medium devices we have mention already so, other left devices margin from bottom will 5)-->
+                    <!-- Counter 1 -->
+                    <div class="col-md-3 mb-lg-0 mb-md-0 mb-5">
+                        <h2><span id="counter1"></span>+</h2>
+                        <p>ORDERED</p>
+                    </div>
+                    <!-- Counter 2 -->
+                    <div class="col-md-3 mb-lg-0 mb-md-0 mb-5">
+                        <h2><span id="counter2"></span>+</h2>
+                        <p>COUSTOMER</p>
+                    </div>
+                    <!-- Counter 3 -->
+                    <div class="col-md-3 mb-lg-0 mb-md-0 mb-5">
+                        <h2><span id="counter3"></span>+</h2>
+                        <p>DELIVERED</p>
+                    </div>
+
+                    <!-- Counter 4 -->
+                    <div class="col-md-3 mb-lg-0 mb-md-0 mb-5">
+                        <h2><span id="counter4"></span>+</h2>
+                        <p>GLOBAL STORES</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+
+    <!-- About -->
+    <section id="about">
+        <section class="about-section wrapper">
+            <!-- First section -->
+            <div class="container">
+                <div class="row align-items-center">
+                    <!-- Iagge Div -->
+                    <div class="col-lg-7 col-md-12 mb-lg-0 mb-5">
+                        <div class="card border-0">
+                            <!-- img-fluid to response image -->
+                            <img src="./src/images/img/img-1.png" alt="foodimage" class="img-fluid">
+                        </div>
+                    </div>
+                    <!-- Content Div -->
+                    <div class="col-lg-5 col-md-12 text-sec">
+                        <h2>We pride ourselves on making real food from the best ingredients.</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex ipsa optio error nam, dolores
+                            perspiciatis maxime? Alias, eius error! Odio illo provident repellat totam nulla!</p>
+                        <button class="main-btn mt-4">Learn More</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Second Section -->
+            <div class="container food-type">
+                <div class="row align-items-center">
+                    <!-- Content Div-->
+                    <div class="col-lg-5 col-md-12 text-sec mb-lg-0 mb-5">
+                        <h2>We make everything by hand with the best possible ingredients.</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum laborum at labore nam
+                            delectus corporis non laboriosam libero voluptatem autem ab odit, earum sit, incidunt
+                            numquam temporibus quas ipsa velit sed! Sint pariatur necessitatibus dolore soluta
+                            blanditiis! Libero odit nostrum pariatur quaerat fugiat, sit iste!</p>
+                        <ul class="list-unstyled py-3">
+                            <li>Lorem ipsum dolor sit amet consectetur, adipisicing</li>
+                            <li>Lorem ipsum dolor sit amet consectetur, adipisicing</li>
+                            <li>Lorem ipsum dolor sit amet consectetur, adipisicing</li>
+                        </ul>
+                        <button class="main-btn mt-4">Learn More</button>
+                    </div>
+                    <!-- Image Div -->
+                    <div class="col-lg-7 col-md-12">
+                        <div class="card
+                        border-0">
+                            <img src="./src/images/img/img-2.png" alt="food image" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+    </section>
+
+    <!-- Story -->
+    <section id="story">
+        <section class="story-section">
+            <div class="container">
+                <div class="row">
+                    <!-- Here sm-12 mean on small devices it will take full width we have mention minimum 12 so, it will take automatically full for others too -->
+                    <div class="col-sm-12">
+                        <div class="text-content">
+                            <h2>When a man's stomach is full it makes no difference wheather he is rich or poor</h2>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi nostrum corporis est quas
+                                sequi aliquam Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut aliquid nobis
+                                magni quam id, alias quisquam et? Officiis, iure porro!</p>
+                            <button class="main-btn mt-3">Read More</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+
+    <!-- Explore Food -->
+    <section id="explore-food">
+        <div class="explore-food wrapper">
+            <div class="container">
+                <!-- content -->
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="text-content text-center">
+                            <h2>Explore our food</h2>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione aut dolorem facilis a,
+                                nesciunt rerum fuga beatae exercitationem excepturi. Dolorem perferendis corrupti
+                                asperiores, inventore nobis eos laudantium voluptas nihil laboriosam. Saepe earum,
+                                itaque nobis odio quaerat iusto, debitis, enim natus quibusdam voluptas cumque et
+                                nostrum minima laboriosam officia impedit esse.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- card -->
+                <div class="row pt-5">
+                    <!-- Card 1 -->
+                    <div class="col-lg-4 col-md-6 mb-lg-0 mb-5">
+                        <div class="card">
+                            <img src="./src/images/img/img-3.jpg" alt="food image" srcset="" class="img-fluid">
+                            
+                            <div class="pt-3">
+                                <h4>Rainbow Vegetables Sandwich</h4>
+                                <p>Time: 15 - 20 Minutes | Service: 1</p>
+                                <span>$10.50 <del>$11.70</del></span>
+                                <button class="main-btn mt-4">Order Now</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Card 2 -->
+                    <div class="col-lg-4 col-md-6 mb-lg-0 mb-5">
+                        <div class="card">
+                            <img src="./src/images/img/img-4.jpg" alt="food image" srcset="" class="img-fluid">
+                            
+                            <div class="pt-3">
+                                <h4>vegetarian Burger</h4>
+                                <p>Time: 30 - 44 Minutes | Service: 1</p>
+                                <span>$9.20 <del>$10.70</del></span>
+                                <button class="main-btn mt-4">Order Now</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Card 3 -->
+                    <div class="col-lg-4 col-md-6 mb-lg-0 mb-5">
+                        <div class="card">
+                            <img src="./src/images/img/img-5.jpg" alt="food image" srcset="" class="img-fluid">
+                            
+                            <div class="pt-3">
+                                <h4>French Toast</h4>
+                                <p>Time: 10 - 15 Minutes | Service: 1</p>
+                                <span>$15.20 <del>$11.70</del></span>
+                                <button class="main-btn mt-4">Order Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <!-- Testimonial -->
+    <section id="testimonial">
+        <div class="wrapper testimonial-section">
+            <div class="container">
+                <div class="text-center pb-4">
+                    <h2>Testimonial</h2>
+                </div>
+                <!-- Slider -->
+                <div class="row">
+                    <!-- offset-lg-1 mean space of column1 from left side on large screen -->
+                    <div class="col-sm-12 col-lg-10 offset-lg-1">
+                        <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                            <div class="carousel-indicators">
+                              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                            </div>
+                            <!-- Review 1 -->
+                            <div class="carousel-inner">
+                              <div class="carousel-item active">
+                                  <div class="carousel-caption">
+                                    <img src="./src/images/review/review-1.jpg" alt="review image">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci nesciunt deserunt a numquam neque, officia quasi eius officiis rerum voluptatibus voluptates, quibusdam, vel soluta consequatur!</p>
+                                    <h5>Jim Carry - UX Designer</h5>
+                                </div>
+                              </div>
+                              <!-- Review 2 -->
+                              <div class="carousel-item">
+                                  <div class="carousel-caption">
+                                    <img src="./src/images/review/review-2.jpg" alt="review image">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur enim harum quos saepe! Quod exercitationem deleniti et eligendi magnam. Aliquid itaque commodi iure ea unde?</p>
+                                    <h5>Alita Dove - UI Designer</h5>
+                                </div>
+                              </div>
+                              <!-- Review 3 -->
+                              <div class="carousel-item">
+                                  <div class="carousel-caption">
+                                    <img src="./src/images/review/review-1.jpg" alt="review image">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia quia molestias ipsa ex labore, soluta officia. Nesciunt dolore quo cum ratione rem provident molestias enim!</p>
+                                    <h5>K White</h5>
+                                </div>
+                              </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+                              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                              <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+                              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                              <span class="visually-hidden">Next</span>
+                            </button>
+                          </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq">
+        <div class="faq wrapper">
+            <div class="container">
+                <!-- FAQ heading -->
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="text-center pb-4">
+                            <h2>Frequently Asked Question</h2>
+                        </div>
+                    </div>
+                </div>
+                <!-- Questions -->
+                <div class="row pt-5">
+                    <!-- Question 1 -->
+                    <div class="col-sm-6 mb-4">
+                        <h4><span>~</span>Is foodie bread really baked fresh each day?</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, minus sit consequatur ut eaque veritatis voluptas, id animi eos dolore autem natus ex asperiores consequuntur.</p>
+                    </div>
+                    <!-- Question 2 -->
+                    <div class="col-sm-6 mb-4">
+                        <h4><span>~</span>Is foodie bread really baked fresh each day?</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, minus sit consequatur ut eaque veritatis voluptas, id animi eos dolore autem natus ex asperiores consequuntur.</p>
+                    </div>
+                    <!-- Question 3 -->
+                    <div class="col-sm-6 mb-4">
+                        <h4><span>~</span>Is foodie bread really baked fresh each day?</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, minus sit consequatur ut eaque veritatis voluptas, id animi eos dolore autem natus ex asperiores consequuntur.</p>
+                    </div>
+                    <!-- Question 4 -->
+                    <div class="col-sm-6 mb-4">
+                        <h4><span>~</span>Is foodie bread really baked fresh each day?</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, minus sit consequatur ut eaque veritatis voluptas, id animi eos dolore autem natus ex asperiores consequuntur.</p>
+                    </div>
+                    <!-- Question 5 -->
+                    <div class="col-sm-6 mb-4">
+                        <h4><span>~</span>Is foodie bread really baked fresh each day?</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, minus sit consequatur ut eaque veritatis voluptas, id animi eos dolore autem natus ex asperiores consequuntur.</p>
+                    </div>
+                    <!-- Question 6 -->
+                    <div class="col-sm-6 mb-4">
+                        <h4><span>~</span>Is foodie bread really baked fresh each day?</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, minus sit consequatur ut eaque veritatis voluptas, id animi eos dolore autem natus ex asperiores consequuntur.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Book Food -->
+    <section>
+        <div class="book-food">
+            <div class="container book-food-text">
+                <div class="row text-center">
+                    <!-- Text -->
+                    <div class="col-lg-9 col-md-12">
+                        <h2>Baked Fresjh Daily By Bakers With Passion.</h2>
+                    </div>
+                    <!-- Button -->
+                    <div class="col-lg-3 col-md-12 mt-lg-0 mt-4">
+                        <button class="main-btn">Order Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <Section>
+        <div class="newsletter wrapper">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <!-- Content -->
+                        <div class="text-content text-center pb-4">
+                            <h2>Hurry Up! Subscribe Our Newsletter And Get 25% Off</h2>
+                            <p>Limited time offer for this month. No credit card required</p>
+                        </div>
+                        <!-- Input -->
+                        <form action="" class="newsletter">
+                            <div class="row">
+                                <!-- col-12 used for mobile devices lower than 576px -->
+                                <div class="col-md-8 col-12">
+                                    <input class="form-control" placeholder="Email" name="email" type="email">
+                                </div>
+                                <!-- button -->
+                                <div class="col-md-4 col-12">
+                                    <button class="main-btn" type="submit">Subscribe</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </Section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer py-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <a href="#" class="footer-link">Register</a>
+                        <a href="#" class="footer-link">Forum</a>
+                        <a href="#" class="footer-link">Affiliate</a>
+                        <a href="#" class="footer-link">FAQ</a>
+                        <!-- Social Icon -->
+                        <div class="footer-social pt-4 text-center">
+                            <a href=""><i class="fab fa-facebook"></i></a>
+                            <a href=""><i class="fab fa-twitter"></i></a>
+                            <a href=""><i class="fab fa-youtube"></i></a>
+                            <a href=""><i class="fab fa-dribbble"></i></a>
+                            <a href=""><i class="fab fa-linkedin"></i></a>
+                            <a href=""><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- md same as sm we can use md-12 also -->
+                <div class="col-sm-12">
+                    <div class="footer-copy">
+                        <div class="copy-right text-center pt-5">
+                            <p class="text-light"> 2021. Foodies. All rights reserved.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+        crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js" integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/" crossorigin="anonymous"></script>
+    -->
+
+    <!-- Own JS -->
+    <script src="main.js"></script>
+</body>
+
+</html>
